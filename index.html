@@ -1,10 +1,19 @@
+Oto kompletne rozwiązanie zadań 1, 2, 3 i 4 w jednym pliku HTML:
+
+```html
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Sposoby podłączania CSS</title>
+    <meta charset="UTF-8">
+    <title>CSS Tasks</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-bottom: 20px;
         }
         th, td {
             border: 1px solid black;
@@ -14,45 +23,116 @@
         th {
             background-color: #f2f2f2;
         }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+        }
+        .task {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
-    <h1>Sposoby podłączania CSS do kodu strony WWW</h1>
-    <table>
-        <tr>
-            <th>Sposób</th>
-            <th>Opis</th>
-        </tr>
-        <tr>
-            <td>Zewnętrzny arkusz stylów</td>
-            <td>
-                <code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code>
-            </td>
-        </tr>
-        <tr>
-            <td>Styl lokalny</td>
-            <td>
-                <code>&lt;div style="color: red;"&gt;Tekst&lt;/div&gt;</code>
-            </td>
-        </tr>
-        <tr>
-            <td>Wewnętrzny arkusz stylów</td>
-            <td>
-                <code>&lt;style&gt; h1 { color: blue; } &lt;/style&gt;</code>
-            </td>
-        </tr>
-        <tr>
-            <td>Alternatywny arkusz stylów</td>
-            <td>
-                <code>&lt;link rel="alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;</code>
-            </td>
-        </tr>
-        <tr>
-            <td>Import arkusza stylów</td>
-            <td>
-                <code>&lt;style&gt; @import url("style.css"); &lt;/style&gt;</code>
-            </td>
-        </tr>
-    </table>
+    <div class="task">
+        <h1>Zadanie 1: Wykonanie szkieletu zaliczeniowego strony</h1>
+        <table width="95%" border="1" align="center">
+            <tr>
+                <td width="18%" align="center">
+                    <a href="http://www.kuratorium.gda.pl" target="strony">Kuratorium</a>
+                    <br>
+                    <a href="http://www.wp.pl" target="strony">Portal WP</a>
+                </td>
+                <td align="center">
+                    <iframe width="650" height="650" name="strony" src="start.html" border="0"></iframe>
+                </td>
+                <td width="18%" align="center">
+                    <a href="start.html" target="strony">Start</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="task">
+        <h1>Zadanie 2: Definicja CSS oraz wytłumaczenie skrótu (po angielsku)</h1>
+        <h1>CSS - Cascading Style Sheets</h1>
+        <p>CSS stands for Cascading Style Sheets. It is a language used to describe the style of document presentations in web development.</p>
+    </div>
+
+    <div class="task">
+        <h1>Zadanie 3: Cechy modyfikowania formatowania w HTML oraz CSS (tabela)</h1>
+        <table>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+            <tr>
+                <td>Formatowanie wbudowane w strukturę dokumentu</td>
+                <td>Oddzielenie struktury od prezentacji</td>
+            </tr>
+            <tr>
+                <td>Trudne do zarządzania</td>
+                <td>Łatwe do zarządzania</td>
+            </tr>
+        </table>
+        <h2>Nowe możliwości CSS</h2>
+        <ol>
+            <li>Przejrzystość i krótkość dokumentów</li>
+            <li>Łatwe zarządzanie serią dokumentów</li>
+            <li>Oszczędność pisania dzięki klasom selektorów</li>
+            <li>Różnorodne jednostki i sposoby definiowania kolorów</li>
+        </ol>
+        <h2>Wady CSS</h2>
+        <ul>
+            <li>Złożona specyfikacja</li>
+            <li>Brak sygnalizacji błędów</li>
+            <li>Błędne obsługiwanie przez różne przeglądarki</li>
+        </ul>
+    </div>
+
+    <div class="task">
+        <h1>Zadanie 4: Sposoby podłączania CSS do kodu strony WWW</h1>
+        <table>
+            <tr>
+                <th>Sposób</th>
+                <th>Opis</th>
+            </tr>
+            <tr>
+                <td>Zewnętrzny arkusz stylów</td>
+                <td>
+                    <code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>Styl lokalny</td>
+                <td>
+                    <code>&lt;div style="color: red;"&gt;Tekst&lt;/div&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>Wewnętrzny arkusz stylów</td>
+                <td>
+                    <code>&lt;style&gt; h1 { color: blue; } &lt;/style&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>Alternatywny arkusz stylów</td>
+                <td>
+                    <code>&lt;link rel="alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;</code>
+                </td>
+            </tr>
+            <tr>
+                <td>Import arkusza stylów</td>
+                <td>
+                    <code>&lt;style&gt; @import url("style.css"); &lt;/style&gt;</code>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
+```
+
+Ten plik HTML zawiera wszystkie zadania w jednym miejscu. Możesz go zapisać jako plik HTML i otworzyć w przeglądarce, aby zobaczyć wyniki. Jeśli masz jakieś pytania lub potrzebujesz dalszej pomocy, daj mi znać!
