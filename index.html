@@ -1,32 +1,58 @@
 <html>
 <head>
-<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+    <title>Sposoby podłączania CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
- <table width="65%" border="1" align="center">
-            <td colspan="3">
-            <td width="18%" align="center">
-                <b>Lewe menu</b>
-                <ul>
-                    <li><a href="https://zse.edu.gdansk.pl/pl" target="obszar_glowny">Strona ZSE</a></li>
-                    <li><a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a></li>
-                     <li><a href="https://how2html.pl/html-head-body/" target="obszar_glowny">Link1</a></li>
-                    <li><a href="https://how2html.pl" target="obszar_glowny">Link2</a></li>
-                </ul>
-            </td>
-            <td align="center">
-                <iframe width="650" height="420" name="obszar_glowny" src="glowny_twoje_nazwisko.html" border="0"></iframe>
-            </td>
-            <td width="18%" align="center">
-             <b>Lewe menu</b>
-                <ul>
-                    <li><a href="https://zse.edu.gdansk.pl/pl" target="obszar_glowny">Strona ZSE</a></li>
-                    <li><a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a></li>
-                     <li><a href="https://how2html.pl/html-head-body/" target="obszar_glowny">Link1</a></li>
-                    <li><a href="https://how2html.pl" target="obszar_glowny">Link2</a></li>
-                   <td colspan="3">
-                </ul>
+    <h1>Sposoby podłączania CSS do kodu strony WWW</h1>
+    <table>
+        <tr>
+            <th>Sposób</th>
+            <th>Opis</th>
+        </tr>
+        <tr>
+            <td>Zewnętrzny arkusz stylów</td>
+            <td>
+                <code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code>
             </td>
         </tr>
+        <tr>
+            <td>Styl lokalny</td>
+            <td>
+                <code>&lt;div style="color: red;"&gt;Tekst&lt;/div&gt;</code>
+            </td>
+        </tr>
+        <tr>
+            <td>Wewnętrzny arkusz stylów</td>
+            <td>
+                <code>&lt;style&gt; h1 { color: blue; } &lt;/style&gt;</code>
+            </td>
+        </tr>
+        <tr>
+            <td>Alternatywny arkusz stylów</td>
+            <td>
+                <code>&lt;link rel="alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;</code>
+            </td>
+        </tr>
+        <tr>
+            <td>Import arkusza stylów</td>
+            <td>
+                <code>&lt;style&gt; @import url("style.css"); &lt;/style&gt;</code>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
