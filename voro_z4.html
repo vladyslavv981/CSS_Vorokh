@@ -1,16 +1,10 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Zadanie 4: Sposoby podłączania CSS do kodu strony WWW</title>
+    <title>Sposoby podłączania CSS</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
         }
         th, td {
             border: 1px solid black;
@@ -19,10 +13,6 @@
         }
         th {
             background-color: #f2f2f2;
-        }
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
         }
     </style>
 </head>
@@ -35,23 +25,33 @@
         </tr>
         <tr>
             <td>Zewnętrzny arkusz stylów</td>
-            <td><code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code></td>
+            <td>
+                <code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code>
+            </td>
         </tr>
         <tr>
             <td>Styl lokalny</td>
-            <td><code>&lt;div style="color: red;"&gt;Tekst&lt;/div&gt;</code></td>
+            <td>
+                <code>&lt;div style="color: red;"&gt;Tekst&lt;/div&gt;</code>
+            </td>
         </tr>
         <tr>
             <td>Wewnętrzny arkusz stylów</td>
-            <td><code>&lt;style&gt; h1 { color: blue; } &lt;/style&gt;</code></td>
+            <td>
+                <code>&lt;style&gt; h1 { color: blue; } &lt;/style&gt;</code>
+            </td>
         </tr>
         <tr>
             <td>Alternatywny arkusz stylów</td>
-            <td><code>&lt;link rel="alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;</code></td>
+            <td>
+                <code>&lt;link rel="alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;</code>
+            </td>
         </tr>
         <tr>
             <td>Import arkusza stylów</td>
-            <td><code>&lt;style&gt; @import url("style.css"); &lt;/style&gt;</code></td>
+            <td>
+                <code>&lt;style&gt; @import url("style.css"); &lt;/style&gt;</code>
+            </td>
         </tr>
     </table>
 </body>
