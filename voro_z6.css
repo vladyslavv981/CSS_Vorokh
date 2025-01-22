@@ -1,1 +1,9 @@
-
+p {
+  color: green;
+  font-size: 20 px;
+      }
+          body {
+  
+        color: blue;
+    font-size: 30 px;
+          }
