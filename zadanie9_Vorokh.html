@@ -1,1 +1,51 @@
-
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokument</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <h1>Zadanie 9</h1>
+    <ol>
+        <li><h1>Teoretyczna składnia (otoczona ramką, może być tabela jednokomórkowa, konieczne wcięcia)</h1>
+            <br><textarea style="width: 350px; height: 100px;">
+<head>
+    (...)
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    (...)
+</head>
+            </textarea></li>
+        <li><h1>Gdzie umieszczany jest zewnętrzny styl, jaki znacznik za to odpowiada i ile razy może wystąpić w dokumencie?</h1>
+            <br>Styl zewnętrzny jest umieszczany w nagłówku dokumentu, a odpowiada za to znacznik <code>&lt;link&gt;</code>. Może występować wielokrotnie, każdy jako osobny element <code>&lt;link rel="stylesheet" /&gt;</code>.</li>
+        <li><h1>Najprostsza forma wstawiania zewnętrznego stylu (otoczona ramką, może być tabela jednokomórkowa)</h1>
+            <br>
+            <textarea style="width: 450px;">
+<link rel="stylesheet" type="text/css" href="style.css" />
+            </textarea>
+        </li>
+        <li><h1>Ile arkuszy stylów można dołączyć do jednego dokumentu HTML i jaka zasada musi być zachowana przy większej ilości stylów?</h1>
+            Można dołączyć dowolną liczbę zewnętrznych arkuszy stylów, każdy jako osobny element <code>&lt;link rel="stylesheet" /&gt;</code>. Ważne jest, aby przy konfliktach stylów, ważniejsze były deklaracje z arkusza dołączonego później.</li>
+        <li><h1>Co się dzieje w przypadku konfliktów stylów?</h1>
+            W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później.</li>
+        <li><h1>Jak tworzone i edytowane są pliki arkuszy stylów za pomocą edytora tekstowego?</h1>
+            Zewnętrzny arkusz stylów jest zwykłym plikiem tekstowym. Do jego tworzenia i edytowania wystarczy zwykły edytor tekstu.</li>
+        <li><h1>Jak tworzone i edytowane są pliki arkuszy stylów za pomocą specjalnego edytora CSS?</h1>
+            Można użyć specjalnego edytora CSS do tworzenia i edytowania plików arkuszy stylów.</li>
+        <li><h1>Jakie rozszerzenie mają pliki będące zewnętrznymi arkuszami stylów?</h1>
+            Plik będący zewnętrznym arkuszem stylów musi mieć rozszerzenie <code>.css</code>.</li>
+        <li><h1>Jakie są zalety zewnętrznego arkusza stylów (dwie, z użyciem wyliczenia)?</h1>
+            Zalety zewnętrznego arkusza stylów: <br>
+            1) Wszystkie strony w obrębie serwisu mogą mieć wspólne cechy. <br>
+            2) Zmiana np. rodzaju czcionki na wszystkich stronach jest możliwa poprzez modyfikację jedynie zewnętrznego arkusza stylów, bez konieczności zmiany każdej strony osobno.</li>
+        <li><h1>Uwagi na temat pisania w CSS</h1>
+            Znacznik <code>&lt;link&gt;</code> może znajdować się tylko w nagłówku dokumentu (sekcja <code>&lt;head&gt;</code>). <br>
+            Można dołączyć dowolną liczbę zewnętrznych arkuszy stylów, każdy jako osobny element <code>&lt;link rel="stylesheet" /&gt;</code>. <br>
+            W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później. <br>
+            Zewnętrzny arkusz stylów jest zwykłym plikiem tekstowym. Do jego tworzenia i edytowania wystarczy zwykły edytor tekstu. <br>
+            Można użyć specjalnego edytora CSS. <br>
+            Plik będący zewnętrznym arkuszem stylów musi mieć rozszerzenie <code>.css</code>.
+        </li>
+    </ol>
+</body>
+</html>
