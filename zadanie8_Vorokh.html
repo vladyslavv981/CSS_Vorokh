@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokument</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <h1>Zadanie 8</h1>
+    <ol>
+        <li><h1>Gdzie jest umieszczany styl wewnętrzny?</h1>
+            Styl wewnętrzny jest umieszczany w sekcji <code>&lt;head&gt;</code> dokumentu HTML. Wyróżnione (pogrubione) elementy składowe wewnętrznego arkusza stylów wskazują, gdzie można dodać dalsze polecenia.</li>
+        <li><h1>Teoretyczna składnia (w ramce, konieczne wcięcia)</h1>
+            <textarea style="width: 450px; height: 200px;">
+<head>
+    (...)
+    <style type="text/css">
+    /* <![CDATA[ */
+    selektor1 {
+        cecha: wartość;
+        cecha2: wartość2;
+    }
+    selektor2 {
+        cecha: wartość;
+        cecha2: wartość2;
+    }
+    (...)
+    /* ]]> */
+    </style>
+    (...)
+</head>
+            </textarea></li>
+        <li><h1>Jakie mogą być selektory?</h1>
+            Selektorem może być praktycznie każdy znacznik HTML, np. p (akapit), h1 (nagłówek), td (komórka tabeli) i inne. To właśnie tym elementom przypisujemy atrybuty formatowania opisane w arkuszu stylów.</li>
+        <li><h1>Jakie mogą być cechy i wartości?</h1>
+            Jako "cecha" (w deklaracji stylu) wpisujemy konkretne atrybuty formatowania, które nas interesują (opisane w kolejnych rozdziałach). Natomiast jako "wartość" wpisujemy dokładną wartość atrybutu. Zauważ, że jednemu selektorowi możemy przypisać kilka atrybutów (cech), które są rozdzielone średnikami.</li>
+    </ol>
+</body>
+</html>
