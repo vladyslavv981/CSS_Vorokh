@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby określania kolorów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        td {
+            width: 25%;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        code {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Sposoby określania kolorów</b></h1>
+    <table>
+        <tr>
+            <td>
+                <code>a) określanie z użyciem definicji heksadecymalnych<br>
+                DIV { color: #FFFFFF; }</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>b) określanie z użyciem definicji RGB<br>
+                DIV { color: rgb(255, 100, 13); }<br>
+                liczby od 0 do 255 dla kolorów czerwony, zielony, niebieski</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>c) określanie z użyciem nazwy kolorów<br>
+                DIV { color: red; }</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>d) określanie z użyciem definicji RGB oraz nasycenia kolorów<br>
+                DIV { color: rgb(10%, 40%, 78%); }<br>
+                procentowe nasycenie obrazu od 0% do 100%</code>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
