@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budowa selektoru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>
+            <h1>Jakie są dwie części selektorów?</h1>
+            <ul>
+                <li><b>Selektor</b> - określa, do jakich elementów ma zostać przypisane formatowanie, np. h1, p.</li>
+                <li><b>Deklaracja</b> - jest umieszczona w nawiasie klamrowym {...} i podaje to formatowanie. Zawiera cechy i ich wartości.</li>
+            </ul>
+        </li>
+        <li>
+            <h1>Jakie jest znaczenie nawiasów klamrowych?</h1>
+            <p>Deklaracja jest umieszczona w nawiasie klamrowym {...} i podaje to formatowanie. Każda deklaracja składa się z:</p>
+            <ul>
+                <li>przynajmniej jednego zespołu cecha (ang. property)</li>
+                <li>wartości (ang. value), przy czym można podać dowolną liczbę, rozdzielając kolejne znakiem średnika (;).</li>
+            </ul>
+            <p><b>Nawiasy klamrowe obejmują zestaw deklaracji przypisanych do selektora.</b></p>
+        </li>
+        <li>
+            <h1>Jakie są cechy?</h1>
+            <p>Każda grupa elementów ma określony zespół cech CSS, które można jej przypisać. Każda cecha ma ściśle wyszczególnioną listę wartości, które może przyjąć. Na przykład:</p>
+            <ul>
+                <li>Cecha <code>text-align</code> (wyrównanie tekstu) może być przypisana tylko do elementów blokowych, ponieważ podanie jej dla elementów wyświetlanych w linii nie miałoby sensu. Może przyjmować wartości takie jak: left, right, center, justify. Przypisanie do niej np. wartości koloru nie miałoby sensu.</li>
+            </ul>
+            <p><b>Cechy określają wygląd elementu, np. kolor, marginesy, tło, wielkość czcionki.</b></p>
+        </li>
+        <li>
+            <h1>Jakie są wartości selektorów?</h1>
+            <p>Przykład:</p>
+            <pre><code>p { color: red; }</code></pre>
+            <ul>
+                <li>Selektorem jest znacznik <code>p</code>.</li>
+                <li>Deklaracja ma postać <code>{ color: red; }</code>.</li>
+                <li>Cechą jest <code>color</code>.</li>
+                <li>Wartością jest <code>red</code>.</li>
+            </ul>
+            <p><b>Wartości określają, jak dana cecha powinna się zachowywać, np. <code>color: red;</code> ustawia kolor tekstu na czerwony.</b></p>
+        </li>
+        <li>
+            <h1>Kiedy stosujemy znak średnika? Kiedy nie jest konieczny?</h1>
+            <p>Średnik jest wymagany po każdej deklaracji w bloku stylów, jednak ostatnia deklaracja może go nie zawierać.</p>
+        </li>
+    </ol>
+</body>
+</html>
