@@ -1,8 +1,8 @@
-p {
-  color:#6CB460;
-  font-size: 20 pt;
- }
-body {
-  color: rgb(58%,36%,81%);
-  font-size: 30 pt;
+body{
+    color: rgb(58%,36%,81%);
+    font-size: 30pt;
+}
+p{
+    color: #6e5c5f;
+    font-size: 20pt;
 }
